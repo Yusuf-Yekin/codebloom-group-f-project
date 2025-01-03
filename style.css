@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
+:root {
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --dark-blue: hsl(198, 62%, 26%);
+    --dark-moderate-cyan: hsl(168, 34%, 41%);
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+.header {
+ background-image: url("pc-image-header.jpg");
+ background-size: cover;
+ background-position: center;
+ width: 100%;
+ margin-bottom: 0;
+ padding-top: 1%;
+ padding-bottom: 40%;  
+}
+.header .logo {
+ color: var(--white);
+ padding-left: 30px;
+ margin-top: 20px;
+}
+.close {
+  height: 0px;
+}
+.open {
+  height: 0px;
+}
+
+
+.header span {
+  color: white;
+  display: table;
+  margin: 20% auto;
+  padding: 20px 1%;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: Fraunces;
+  font-weight: 800;
+  letter-spacing: 9px;
+}
+.headpage {
+  display: flex;
+}
+ .navMenu{
+  flex: 1;
+  text-align: right;
+  margin-top: -5px;
+  margin-right: 5px;
+}
+.navMenu ul li{
+  display: inline-block;
+  padding: 2px 6px;
+  position: relative;
+}
+.navMenu ul li a{
+   color: var(--text-color-one);
+   text-decoration: none;
+}
+.navMenu > ul > li:hover {
+  background-color: var(--yellow);
+  cursor: pointer;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+li > a {
+  color: inherit;
+  text-decoration: none;
+}
+.arrow {
+  display: table;
+  margin: 0 auto;
+  margin-top: 0%;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.top .egg {
+  background-image: url("pc-image-transform.jpg");
+  width: 50%;
+  margin-top: 0;
+  padding-top: 50%;
+  background-size: cover;
+  background-position: center;
+}
+.top .cup {
+  background-image: url("pc-image-stand-out.jpg");
+  width: 50%;
+  margin-top: 0;
+  padding-top: 50%;
+  background-size: cover;
+  background-position: center;
+}
+.writeup {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 0px;
+  font-size: calc(1vw + 1vh);
+  justify-content: center; 
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  aspect-ratio: 1 / 1;
+  padding: 5%;
+}
+.top .six {
+  margin-top: 0;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+.two {
+  display: flex;
+  aspect-ratio: 2 / 1;
+}
+#flip {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.top div {
+ color: var(--very-dark-grayish-blue);
+ font-family: Barlow;
+ font-weight: 500;
+ line-height: 1.2;
+}
+.trf {
+ color: black;
+ font-family: Fraunces;
+ font-weight: 900;
+ line-height: 1.2;
+}
+.top .ly {
+ color: black;
+ font-family: Fraunces;
+ font-weight: 900;
+ font-size: bold;
+ border-bottom: 5px solid yellow;
+}
+.top .lp {
+ color: black;
+ font-family: Fraunces;
+ font-weight: 900;
+ font-size: bold;
+ border-bottom: 5px solid pink;
+}
+.graphic-design {
+ background-image: url("pc-image-graphic-design.jpg");
+ 
+} 
+.graphic-design, .photography {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding-top: 20%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 0px;
+}
+.photography {
+ background-image: url("pc-image-photography.jpg");
+}
+.top span {
+ font-family: Fraunces;
+ font-weight: 900;
+}
+.mid {
+ padding: 5rem 1rem;
+ text-align: center;
+}
+.mid .testimonials img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-top: 4.5rem;
+  margin-bottom: 2.5rem;
+}
+.tst {
+  color: var(--dark-grayish-blue);
+  font-family: Fraunces;
+  letter-spacing: 5px;
+}
+.mid .name {
+ font-family: Fraunces;
+ font-weight: 900;
+ font-size: 1.5rem;
+}
+.mid .testimonials {
+ color: var(--very-dark-grayish-blue);
+ font-family: Barlow;
+ font-weight: 600;
+ font-size: 0.7rem;
+ margin: 5%;
+}
+.white {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+.four {
+  width: 100%;
+  display: flex;
+}
+.milkbottles {
+  background-image: url(./pc-image-gallery-milkbottles.jpg);
+  width: 25%;
+  padding-top: 25%;
+  background-size: cover;
+}
+.orange {
+  background-image: url(./pc-image-gallery-orange.jpg);
+  width: 25%;
+  padding-top: 25%;
+  background-size: cover;
+}
+.cone {
+  background-image: url(./pc-image-gallery-cone.jpg);
+  width: 25%;
+  padding-top: 25%;
+  background-size: cover;
+}
+.sugarcubes {
+  background-image: url(./pc-image-gallery-sugarcubes.jpg);
+  width: 25%;
+  padding-top: 25%;
+  background-size: cover;
+}
+
+.footer {
+  background-color: hsl(167, 32%, 66%);
+  text-align: center;
+}
+.footerlogo {
+  padding: 50px;
+}
+.footernavMenu ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.footernavMenu ul li {
+  margin: auto 10%;
+  color: inherit;
+}
+.footernavMenu ul li a {
+  color: var(--dark-desaturated-cyan);
+}
+.footericons {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin: 50px auto;
+}
+.attribution {
+  padding: 10px;
+}
+
+
+
+
+@media (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  .open {
+    margin-left: 90%;
+    height: 100%;
+  }
+  
+  .header {
+   background-image: url("mobile-image-header.jpg");
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   margin-bottom: -50px;
+   padding-top: 1%;
+   padding-bottom: 40%;  
+  }
+  .header .logo {
+   color: var(--white);
+   padding-left: 30px;
+   margin-top: 20px;
+  }
+  .header span {
+    color: white;
+    display: table;
+    margin: 20% auto;
+    padding: 20px 1%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: Fraunces;
+    font-weight: 800;
+    letter-spacing: 5px;
+  }
+  header .close {
+    display: block;
+    cursor: pointer;
+    margin-left: 80%;
+    height: 30px;
+  }
+  .navMenu {
+    position: fixed;
+    background-color: var(--white);
+    height: 250px;
+    width: 60%;
+    top: -1000px;
+    margin: 20%;
+    z-index: 2;
+    transition: all .45s ease;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .navMenu ul {
+    padding: 0%;
+  }
+  .navMenu ul li {
+    display: block;
+    transition: all .45s ease;
+    margin: 0 30%;
+    
+  }
+  .navMenu a {
+    
+    display: block;
+    padding: 5px;
+    margin: 10px;
+    font-size: 20px;
+    transition: all .45s ease;
+  }
+  .navMenu > ul > li:hover {
+    background-color: var(--yellow);
+    cursor: pointer;
+    border-radius: 20px;
+    text-transform: uppercase;
+  }
+  li > a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .arrow {
+    display: table;
+    margin: 0 auto;
+    margin-top: 0%;
+    text-align: center;
+  }
+  .top .egg {
+    background-image: url("mobile-image-transform.jpg");
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .top .cup {
+    background-image: url("mobile-image-stand-out.jpg");
+    width: 100%;
+    margin-top: 50px;
+    padding-top: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .top .six {
+    margin-top: 0;
+    max-width: 100%;
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;  
+  }
+  #flip, .two {
+    display: flex;
+    flex-direction: column;
+  }
+  .writeup {
+    width: 100%;
+    aspect-ratio: 1;
+    font-size: 1.5rem;
+  }
+  .graphic-design {
+   background-image: url("mobile-image-graphic-design.jpg");
+   margin-top: 20px;
+  }
+  .graphic-design div, .photography div {
+    padding: 5%;
+  }
+  .graphic-design, .photography {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-top: 85%;
+    padding-bottom: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+  .photography {
+   background-image: url("mobile-image-photography.jpg");
+  }
+  .top span {
+   font-family: Fraunces;
+   font-weight: 900;
+  }
+  .mid {
+   padding: 1rem 1rem;
+   text-align: center;
+   font-family: Barlow;
+  }
+  .mid .testimonials img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 4.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .mid .name {
+   font-family: Fraunces;
+   font-weight: 900;
+   font-size: 1.5rem;
+  }
+  .mid .testimonials {
+   color: var(--very-dark-grayish-blue);
+   font-family: Barlow;
+   font-weight: 600;
+  }
+  .white {
+    display: block;
+  }
+  .four {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .milkbottles {
+    background-image: url(mobile-image-gallery-milkbottles.jpg);
+    width: 100%;
+    padding-top: 100%;
+    background-size: cover;
+  }
+  .orange {
+    background-image: url(mobile-image-gallery-orange.jpg);
+    width: 100%;
+    padding-top: 100%;
+    background-size: cover;
+  }
+  .cone {
+    background-image: url(mobile-image-gallery-cone.jpg);
+    width: 100%;
+    padding-top: 100%;
+    background-size: cover;
+  }
+  .sugarcubes {
+    background-image: url(mobile-image-gallery-sugar-cubes.jpg);
+    width: 100%;
+    padding-top: 100%;
+    background-size: cover;
+  }
+  
+  .footer {
+    background-color: hsl(167, 32%, 66%);
+    text-align: center;
+  }
+  .footerlogo {
+    padding: 50px;
+  }
+  .footernavMenu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  .footernavMenu ul li {
+    margin: auto 10%;
+    color: inherit;
+  }
+  .footernavMenu ul li a {
+    color: var(--dark-desaturated-cyan);
+  }
+  .footericons {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: 50px auto;
+  }
+  .attribution {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 250px) {
+  .footernavMenu ul li {
+    margin: auto 5%;
+  }
+  .footericons {
+    padding: 10px;
+    width: 60%;
+  }
+  .writeup {
+    font-size: 0.5rem;
+  }
+  .graphic-design, .photography {
+    font-size: 0.5rem;
+  }
+  .open {
+    margin-left: 70%;
+  }
+  .footerlogo {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .footer ul {
+    display: block;
+  }
+  .tst {
+    font-size: 0.5rem;
+  }
+}
+
+
+
+
+
