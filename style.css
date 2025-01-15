@@ -321,7 +321,7 @@ li > a {
   .navMenu {
     position: fixed;
     background-color: var(--white);
-    height: 250px;
+    height: 260px;
     width: 60%;
     top: -1000px;
     margin: 20%;
@@ -336,15 +336,15 @@ li > a {
   .navMenu ul li {
     display: block;
     transition: all .45s ease;
-    margin: 0 30%;
+    margin: 3px 10%;
     
   }
   .navMenu a {
     
     display: block;
-    padding: 5px;
+    padding: 3px;
     margin: 10px;
-    font-size: 20px;
+    font-size: 15px;
     transition: all .45s ease;
   }
   .navMenu > ul > li:hover {
